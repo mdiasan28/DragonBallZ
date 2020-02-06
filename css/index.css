@@ -1,0 +1,114 @@
+
+
+#divPrincipal {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Didact Gothic', sans-serif;
+}
+/* Fondo de la página*/
+body {
+    background-image: url("https://i.pinimg.com/originals/8b/4b/64/8b4b64444aba563febe2bff2f067f6b4.jpg");
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+}
+
+#banner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+/* Este es utilizado para la imagen de arriba del banner*/
+.imagenReducida {
+    width: 70%;
+   margin: auto;
+   padding-top: 0%;
+   padding-bottom: 0%;
+   padding-left: 20%;
+   padding-right: 20%;
+
+}
+/* Tarjetas del banner*/
+.contenedorTarjetasBanner {
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.tarjetasinborde {
+    padding: 2%;
+    display: inline-block;
+    text-align: center;
+}
+
+h1 {
+text-align: center;
+}
+
+/* Utilizado solo en el index*/
+h3 {
+text-align: center;
+color: rgb(185, 14, 14);
+    }
+
+/* Aplica el fondo a los contenidos del texto*/
+.contenedorTarjetas {
+    background-color: rgba(253, 135, 0, 0.9);
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.tarjeta {
+    border: 1px solid #000000;
+    padding: 1%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.tarjetasinborde {
+    padding: 1%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+/* Utilizado en las pantallas previas a las sagas*/
+.tarjetaUnMedio {
+    width: 47%;
+    padding: 1%;
+}
+
+/* Utilizados estos dos en las pequeñas imagenes de las sagas*/
+.tarjetaUnCuarto {
+    width: 20%;
+    padding: 2%;
+}
+
+.imagensaga{
+    width: 250px;
+    height: 123px;
+}
+
+.imagenAnchoCompleto {
+    width: 100%;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+
+ol li {
+    text-align: initial;
+}
+ul li {
+    text-align: initial;
+}

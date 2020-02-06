@@ -1,0 +1,163 @@
+<html>
+
+<head>
+  <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <meta name="author" content="Miguel Ángel Díaz Sánchez">
+  <meta name="date" content="06-02-2020">
+</head>
+
+<body>
+  <div id="divPrincipal">
+    <div id="banner">
+      <img class="imagenReducida" src="images/DBZ_Logo.png" />
+    </div>
+    <div class="contenedorTarjetasBanner tarjetasinborde">
+      <div class="tarjetasinborde ">
+        <a href="index.html">Inicio</a>
+      </div>
+      <div class="tarjetasinborde">
+        <a href="Personajes.html">Personajes</a>
+      </div>
+      <div class="tarjetasinborde">
+        <a href="Sagas.html">Sagas</a>
+      </div>
+      <div class="tarjetasinborde ">
+        Cuestionario
+      </div>
+      <div class="tarjeta ContenedorTarjetas">
+        <h1>Cuestionario</h1>
+        <div class="tarjetasinborde">
+          ¿Te gustaría crear tu propio personaje?, mándanos tus sugerencias para crear lo que sería tu personaje ideal
+          rellenando el siguiente Cuestionario
+        </div>
+        <hr>
+        <div class="tarjetasinborde tarjetaUnCuarto">
+          <img class="imagenAnchoCompleto" src="images/Zaiko.gif" />
+        </div>
+        <form id="form1" name="form1" method="post" action="/ServletEjemploFormularios">
+          <p class="tarjetasinborde">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="Nombre" id="Nombre" />
+          </p>
+          <p class="tarjetasinborde">
+            <label for="Descripcion">Descripción: </label>
+            <textarea name="Descripcion" id="Descripcion" cols="45" rows="1"></textarea>
+          </p>
+
+          </p>
+          Superataque:
+          <p class="tarjetasinborde">
+            <label>
+              <input type="radio" name="Ataque" value="1" id="Ataque_0" />
+              Kamehame-ha</label>
+            <label>
+              <input type="radio" name="Ataque" value="2" id="Ataque_1" />
+              Galick Gun</label>
+            <label>
+              <input type="radio" name="Ataque" value="3" id="Ataque_2" />
+              Final Flash</label>
+            <label>
+              <input type="radio" name="Ataque" value="4" id="Ataque_3" />
+              Masenko</label>
+            <label>
+              <input type="radio" name="Ataque" value="5" id="Ataque_4" />
+              Disco Destructor</label>
+          </p>
+          <br>
+          Personalidad:
+          <p class="tarjetasinborde">
+            <label>
+              <input type="checkbox" name="Personalidad" value="1" id="checkbox_0" />
+              Serio</label>
+            <label>
+              <input type="checkbox" name="Personalidad" value="2" id="checkbox_1" />
+              Simpático</label>
+            <label>
+              <input type="checkbox" name="Personalidad" value="3" id="checkbox_2" />
+              Inocente</label>
+            <label>
+              <input type="checkbox" name="Personalidad" value="4" id="checkbox_3" />
+              Malvado</label>
+            <label>
+              <input type="checkbox" name="Personalidad" value="5" id="checkbox_4" />
+              Defensor</label>
+          </p>
+          <p>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox">Se puede transformar</label>
+          </p>
+          Raza:
+          <p class="tarjetasinborde">
+            <label>
+              <input type="radio" name="Sexo" value="1" id="Sexo_0" />
+              Humano</label>
+            <label>
+              <input type="radio" name="Sexo" value="2" id="Sexo_1" />
+              Saiyan</label>
+            <label>
+              <input type="radio" name="Sexo" value="3" id="Sexo_2" />
+              Namekiano</label>
+            <label>
+              <input type="radio" name="Sexo" value="4" id="Sexo_3" />
+              Majin</label>
+            <label>
+              <input type="radio" name="Sexo" value="5" id="Sexo_4" />
+              Freezer</label>
+          </p>
+          <p>
+            <label for="select">Edad</label>
+            <select name="select" id="select">
+              <option value="1">0-15</option>
+              <option value="2">16-30</option>
+              <option value="3">31-45</option>
+              <option value="4">46-60</option>
+              <option value="5">61-75</option>
+              <option value="6">76-90</option>
+              <option value="7">91-105</option>
+              <option value="8">106-1000</option>
+              <option value="9">+1000</option>
+            </select>
+            <p>
+              <label for="select">Altura(cm)</label>
+              <select name="select2" id="select2">
+                <option value="1">1.00-1.30</option>
+                <option value="2">1.30-1.60</option>
+                <option value="3">1.60-1.80</option>
+                <option value="4">1.80-2.00</option>
+                <option value="5">2.00-2.10</option>
+                <option value="6">2.10-2.40</option>
+                <option value="7">+2.40</option>
+              </select>
+            </p>
+          </p>
+          <p>
+            <label for="select">Peso(kg)</label>
+            <select name="select2" id="select2">
+              <option value="1">0-20</option>
+              <option value="2">21-40</option>
+              <option value="3">41-60</option>
+              <option value="4">61-80</option>
+              <option value="5">81-100</option>
+              <option value="6">101-130</option>
+              <option value="7">131-1000</option>
+              <option value="9">+1000</option>
+            </select>
+          </p>
+          <p>
+            <input name="oculto" type="hidden" id="oculto" value="valorOculto" />
+            <br />
+          </p>
+          <p>
+            <input type="submit" name="Enviar" id="Enviar" value="Enviar el formulario" />
+            <hr>
+            IMPORTANTE ESTE CUESTIONARIO NO RECOGERÁ NINGUN TIPO DE INFORMACIÓN, NO FUNCIONA
+          </p>
+        </form>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
